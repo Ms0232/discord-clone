@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
-const font = Open_Sans({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "team chat app",
@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en" suppressHydrationWarning>
-        <body className={font.className}>
+      <html suppressHydrationWarning>
+        <body className={openSans.className}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
