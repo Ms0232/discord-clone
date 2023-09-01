@@ -37,7 +37,7 @@ export const NavigationItem = ({ id, imageUrl, name }: NavigationItemProps) => {
               "bg-primary/10 text-primary rounded-[16px]"
           )}
         >
-          <Image height={48} width={48} src={imageUrl} alt="Channel" />
+          <Image fill src={imageUrl} alt="Channel" />
         </div>
       </button>
     </ActionTooltip>
